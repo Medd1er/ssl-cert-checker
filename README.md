@@ -24,7 +24,6 @@ A shell script to grab statistic of SSL Certificates
       > systemctl restart zabbix-agent
       
    5. Import **template-ssl-cert-check.xml**
-   6. Import **screen-ssl-cert-check.xml**
-   7. Fill the inherited macros field {$WEBHOST} in attached template to the host 
+   6. Fill the inherited macros field {$WEBHOST} in attached template to the host 
    and change {$PORT} if necessary (by default scripts uses 443 port)
-   8. Enjoy!
+   7. Enjoy!
