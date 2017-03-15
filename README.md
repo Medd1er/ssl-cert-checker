@@ -11,7 +11,7 @@ A shell script to grab statistic of SSL Certificates
    2. Grant access for Zabbix user to script directory
       and script itself
       
-      > chown root:zabbix -R /etc/zabbix/scripts
+      > chown root:zabbix /etc/zabbix/scripts
       
       > chmod 550 -R /etc/zqbbix/scripts
    
