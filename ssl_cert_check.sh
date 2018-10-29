@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 DEBUG=0
 if [ $DEBUG -gt 0 ]
 then
@@ -7,16 +7,16 @@ then
 fi
 
 f=$1
-host=$2
+servername=$2
 port=$3
-sni=$4
+hostip=$4
 proto=$5
 
-if [ -z "$sni" ]
+if [ -z "$hostip" ]
 then
-    servername=$host
+    host=$servername
 else
-    servername=$sni
+    host=$hostip
 fi
 
 if [ -n "$proto" ]
