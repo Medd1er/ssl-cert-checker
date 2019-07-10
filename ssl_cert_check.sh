@@ -6,6 +6,12 @@ then
     set -x
 fi
 
+if ! `which openssl > /dev/null 2>&1`
+then
+    echo "Can't find command openssl - is it installed?" >&2
+    exit 1
+fi
+
 f=$1
 servername=$2
 port=$3
